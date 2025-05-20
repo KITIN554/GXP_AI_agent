@@ -2,5 +2,6 @@
 Реализация первой версии стартапа для фармацевтических компании
 
 ```
-ollama pull nomic-embed-text
+uv sync
+uv run streamlit run web/Start_page.py
 ```
