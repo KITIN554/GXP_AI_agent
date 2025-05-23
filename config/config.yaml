@@ -1,7 +1,7 @@
 data_config:
-  path: ./texts
+  path: texts
 
-  save_path: ./data/docs.dill
+  save_path: data/docs.dill
 
   splitter_config:
     chunk_size: 1500
@@ -13,14 +13,14 @@ faiss_config:
   index: ...
 
   store:
-    data_path: ./data/faiss_index
+    data_path: data/faiss_index
 
   search_config:
     retriever:
       search_type: mmr
-      search_kwargs: 
+      search_kwargs:
         k: 5
-    
+
     directly:
       k: 2
 
@@ -30,7 +30,7 @@ logging:
 embeddings:
   ollama_config:
     model: nomic-embed-text
-  
+
   chatgpt_config:
     model: text-embedding-3-small
     api_key: sk-yN6G4Vj4F3DTi4DeSZg7Lml8C42yuU37
@@ -41,10 +41,10 @@ llm:
   ollama_config:
     model: gemma3:1b
     temperature: 0.2
-  
+
   chatgpt_config:
     model: deepseek-chat
     api_key: sk-yN6G4Vj4F3DTi4DeSZg7Lml8C42yuU37
     base_url: https://api.proxyapi.ru/deepseek
-    
+
     temperature: 0.3
